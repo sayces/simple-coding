@@ -25,7 +25,7 @@ services:
     image: asm-study-image # Имя образа
     container_name: asm-study # Имя контейнера
     volumes:
-      - "C:/sayce/Desktop/study/assembly/vols:/mnt/code" # Подключение тома для редактирования в VS Code
+      - "C:/Users/sayce/Desktop/study/assembly/vols:/mnt/code" # Подключение тома для редактирования в VS Code
     mem_limit: 4g # Ограничение памяти
     cpus: 1 # Ограничение CPU
     stdin_open: true # Для интерактивности
@@ -89,7 +89,7 @@ services:
     image: asm-study-image
     container_name: asm-study
     volumes:
-      - "C:/sayce/Desktop/study/assembly/vols:/mnt/code"
+      - "C:/Users/sayce/Desktop/study/assembly/vols:/mnt/code"
     mem_limit: 4g
     cpus: 1
     stdin_open: true
@@ -103,7 +103,7 @@ services:
     image: ubuntu:latest
     command: /bin/bash
     volumes:
-      - "C:/sayce/Desktop/study/assembly/vols:/mnt/code"
+      - "C:/Users/sayce/Desktop/study/assembly/vols:/mnt/code"
     depends_on:
       - asm-study
 ```
